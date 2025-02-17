@@ -1,0 +1,170 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+}
+
+.roadmap {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.step {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 5px solid #007bff;
+    background: #eef5ff;
+    border-radius: 5px;
+}
+
+.step h2 {
+    margin: 0 0 10px;
+    color: #0056b3;
+    font-size: 1.2em;
+}
+
+.step ul {
+    list-style: none;
+    padding: 0;
+}
+
+.step li {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+.highlight {
+    font-weight: bold;
+    font-style: italic;
+    color: #d63384;
+} */
+
+/* Загальні стилі для сторінки */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 20px;
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #34495e;
+    margin: 15px 0;
+}
+
+/* Стилі для елементів .roadmap */
+.roadmap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    padding: 0 20px;
+    width: 80%;
+}
+
+.step {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.step:hover {
+    transform: scale(1.02);
+}
+
+.step ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.step ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.step ul li::before {
+    content: '✔️';
+    margin-right: 10px;
+}
+
+.step .highlight {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Стилі для іконок */
+h1::before {
+    content: '🚀';
+    margin-right: 10px;
+}
+
+h2 span.highlight::before {
+    content: '🎯';
+    margin-right: 5px;
+}
+
+.step:nth-child(2) h2 span.highlight::before {
+    content: '🛠';
+}
+
+.step:nth-child(3) h2 span.highlight::before {
+    content: '📑';
+}
+
+.step:nth-child(4) h2 span.highlight::before {
+    content: '🐞';
+}
+
+.step:nth-child(5) h2 span.highlight::before {
+    content: '📖';
+}
+
+.step:nth-child(6) h2 span.highlight::before {
+    content: '✅';
+}
+
+/* photo myself */
+
+.profile-image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-image: url(); /* Перше фото */
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease-in-out;
+}
+
+.profile-image:hover {
+    background-image: url('path/to/photo2.jpg'); /* Друге фото при наведенні */
+}
