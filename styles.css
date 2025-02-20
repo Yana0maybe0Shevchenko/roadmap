@@ -159,12 +159,12 @@ h2 span.highlight::before {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    background-image: url(); /* Перше фото */
+    background-image: url(..\\roadmap\photo-yana\yana-photo-1.jpg); /* Перше фото */
     background-size: cover;
     background-position: center;
     transition: background-image 0.3s ease-in-out;
 }
 
 .profile-image:hover {
-    background-image: url('path/to/photo2.jpg'); /* Друге фото при наведенні */
-}
+    background-image: url(.\\Deroadmap\photo-yana\yana-photo-1); /* Друге фото при наведенні */
+}"C:\Program Files\nodejs\node_modules\npm\node_modules\smart-buffer\docs\ROADMAP.md"
